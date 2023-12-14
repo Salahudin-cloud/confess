@@ -9,7 +9,7 @@
                 <img src="<?php echo base_url() . 'assets/dist/img/avatar5.png' ?>" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Admin</a>
+                <a href="#" class="d-block"><?= session()->get('username') ?></a>
             </div>
         </div>
 
@@ -22,16 +22,6 @@
                         <i class="nav-icon fas fa-home"></i>
                         <p>
                             Dashboard
-                        </p>
-                    </a>
-                </li>
-
-                <!-- User Management -->
-                <li class="nav-item ">
-                    <a href="<?php echo site_url('mengelola_pengguna') ?>" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
-                        <p>
-                            Mengelola Pengguna
                         </p>
                     </a>
                 </li>
